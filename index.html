@@ -47,7 +47,7 @@
 
         
         searchButton.addEventListener('click',function(){
-            fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=b13efc4bad0ebc3f2693a6e5956e6315')
+            fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=b13efc4bad0ebc3f2693a6e5956e6315')
             .then(response => response.json())
             .then(data => {
                 const nameValue = data['name'];
